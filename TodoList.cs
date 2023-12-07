@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -24,7 +24,6 @@ namespace Lab2
             {
                 return tasks;
             }
-
         }
 
         public IEnumerable<TodoTask> CompletedTasks
@@ -165,7 +164,7 @@ namespace Lab2
                     {
                         while (reader.Read())
                         {
-                            tasks.Add(new Task
+                            tasks.Add(new TodoTask
                             {
                                 Title = reader.GetString(0),
                                 Description = reader.GetString(1),
