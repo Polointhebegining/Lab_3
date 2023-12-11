@@ -31,8 +31,7 @@ namespace Lab2
                 Console.WriteLine("2 - поиск задач по тэгам");
                 Console.WriteLine("3 - выход из программы");
                 Console.WriteLine("4 - удаление");
-                Console.WriteLine("5 - сохранить задачу");
-                Console.WriteLine("6 - загрузить задачу");
+
 
                 comanda = Convert.ToInt32(Console.ReadLine());
                 //1.добавление новой задачи
@@ -132,57 +131,7 @@ namespace Lab2
                     
                 }
 
-                //5. сохранить задачу
-                if (comanda == 5)
-                {
-                    Console.WriteLine("1 - сохранить задачу в JSON");
-                    Console.WriteLine("2 - сохранить задачу в XML");
-                    Console.WriteLine("3 - сохранить задачу в SQLite");
-
-                    var ind = Convert.ToInt32(Console.ReadLine());
-
-                    if (ind == 1)
-                    {
-                        todoList.SaveToJSON();
-                        break;
-                    }
-                    if (ind == 2)
-                    {
-                        todoList.SaveToXML();
-                        break;
-                    }
-                    if (ind == 3)
-                    {
-                        todoList.SaveToSQLite();
-                        break;
-                    }
-                }
-
-                //6. загрузить задачу
-                if (comanda == 6)
-                {
-                    Console.WriteLine("1 - сохранить задачу в JSON");
-                    Console.WriteLine("2 - сохранить задачу в XML");
-                    Console.WriteLine("3 - сохранить задачу в SQLite");
-
-                    var ind = Convert.ToInt32(Console.ReadLine());
-
-                    if (ind == 1)
-                    {
-                        todoList.LoadToJSON();
-                        break;
-                    }
-                    if (ind == 2)
-                    {
-                        todoList.LoadToXML();
-                        break;
-                    }
-                    if (ind == 3)
-                    {
-                        todoList.LoadToSQLite();
-                        break;
-                    }
-                }
+               
             }            
         }
     }
