@@ -80,7 +80,7 @@ namespace Lab2
             return result;
         }
 
-        //SAVING
+        
         public void SaveToJSON()
         {
             var json = JsonSerializer.Serialize(tasks);
@@ -126,7 +126,7 @@ namespace Lab2
             }
         }
 
-        //LOADING
+        
         public void LoadToJSON()
         {
             if (File.Exists(JsonFilePath))
